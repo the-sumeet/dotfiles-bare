@@ -1,0 +1,32 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "Default Dark.sublime-theme",
+	"dark_theme": "Default.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"color_scheme": "Mariana.sublime-color-scheme",
+
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"match_brackets_content": true,
+	"match_selection": true,
+	"match_tags": true,
+	"mini_diff": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"preview_on_click": false,
+	"scroll_past_end": true,
+	"scroll_speed": 5.0,
+	"show_definitions": true,
+	"show_encoding": true,
+	"show_errors_inline": false,
+	"show_full_path": false,
+	"sidebar_default": true,
+	"swallow_startup_errors": true,
+	"translate_tabs_to_spaces": true,
+}
