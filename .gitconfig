@@ -1,0 +1,14 @@
+[user]
+	name = sumeetmathpati
+	email = sumeet.mathpati@gmail.com
+[core]
+	autocrlf = input
+[alias]
+    prev = checkout HEAD^
+    next = !git checkout `git rev-list HEAD..$(git branch --contains | tail -1) | tail -1`
+    ci = commit
+    co = checkout
+    st = status
+    ll = log --oneline
+[init]
+	defaultBranch = main
