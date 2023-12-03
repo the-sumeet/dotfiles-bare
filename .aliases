@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env pyenv virtualenv
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -12,6 +12,9 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias g="git"
+alias gp="git pull"
+alias gcm="git commit"
+alias gmg="git merge"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

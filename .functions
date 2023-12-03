@@ -24,3 +24,81 @@ function fs() {
 		du $arg .[^.]* ./*;
 	fi;
 }
+
+
+function infrauat() {
+	export AWS_PROFILE=nonprod
+	bin/whitelist uat-blue platform
+	bin/whitelist uat-blue bastion
+	cd config
+	ssh -v -N -F uat.cfg uat-blue
+}
+function infraciticuat() {
+	export AWS_PROFILE=citic
+	cd config
+	ssh -v -N -F uat.cfg uat-citic
+}
+function infrasit() {
+	export AWS_PROFILE=nonprod
+	bin/whitelist sit-blue platform
+	bin/whitelist sit-blue bastion
+	cd config
+	ssh -v -N -F sit.cfg sit-blue
+}
+
+function infradev() {
+	export AWS_PROFILE=nonprod
+	bin/whitelist dev-blue platform
+	bin/whitelist dev-blue bastion
+	cd config
+	ssh -v -N -F nonprod.cfg dev-blue
+}
+function infrasrp() {
+	export AWS_PROFILE=prod
+	bin/whitelist srp bastion
+	bin/whitelist srp platform
+	cd config
+	ssh -v -N -F prod.cfg srp
+}
+function infrasrpuat() {
+	export AWS_PROFILE=prod
+	bin/whitelist srp bastion
+	bin/whitelist srp platform
+	cd config
+	ssh -v -N -F prod.cfg srp
+}
+function infrafiluat() {
+	export AWS_PROFILE=prod
+	bin/whitelist prod-emir bastion
+	bin/whitelist prod-emir platform
+	cd config
+	ssh -v -N -F prod.cfg prod-emir
+}
+function infraprodred() {
+	export AWS_PROFILE=prod
+	bin/whitelist prod-red bastion
+	bin/whitelist prod-red platform
+	cd config
+	ssh -v -N -F prod.cfg prod-red
+}
+function infraprodi3() {
+	export AWS_PROFILE=prod
+	bin/whitelist prod-i3 bastion
+	bin/whitelist prod-i3 platform
+	cd config
+	ssh -v -N -F prod.cfg prod-i3
+}
+function infraprodbp() {
+	export AWS_PROFILE=prod
+	bin/whitelist prod-bp bastion
+	bin/whitelist prod-bp platform
+	cd config
+	ssh -v -N -F prod.cfg prod-bp
+}
+function infraprodbrown() {
+	export AWS_PROFILE=prod
+	bin/whitelist prod-brown bastion
+	bin/whitelist prod-brown platform
+	cd config
+	ssh -v -N -F prod.cfg prod-brown
+}

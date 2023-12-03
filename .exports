@@ -21,3 +21,7 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+###
+
+SE_INFRA_TOOLS_PATH="/Users/sumeetmathpati/Projects/infra-tools"

@@ -38,7 +38,7 @@ setopt SHARE_HISTORY
 setopt APPEND_HISTORY
 # adds commands as they are typed, not at shell exit
 setopt INC_APPEND_HISTORY
-# expire duplicates first
+# expire duplicates first 
 setopt HIST_EXPIRE_DUPS_FIRST 
 # do not store duplications
 setopt HIST_IGNORE_DUPS
@@ -55,3 +55,10 @@ unset file;
 
 # Go 
 export GO111MODULE="auto"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
