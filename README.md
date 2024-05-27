@@ -19,7 +19,7 @@ dotfiles remote add origin https://www.github.com/username/repo.git
 dotfiles push origin master
 ```
 
-## Installing on ohter systems
+## Installing on other systems
 
 ```bash
 echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.zshrc
