@@ -7,7 +7,12 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 # Ruby
 export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
+<<<<<<< HEAD
 # Flutter
 export PATH="$HOME/flutter/bin:$PATH"
 
 export PATH="$PATH:/opt/homebrew/bin"
+=======
+# Flutte
+export PATH=$PATH:/Users/sumeetmathpati/flutter/bin
+>>>>>>> d8dcf581de0a8ff00e17802413490a96e33d7992
