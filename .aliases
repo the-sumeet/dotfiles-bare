@@ -13,8 +13,16 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias g="git"
 alias gp="git pull"
-alias gcm="git commit"
+alias gc="git checkout"
+alias gcm="git commit --allow-empty"
 alias gmg="git merge"
+alias k="kubectl"
+alias klsctx="kubectl config get-contexts"
+alias kctx="kubectl config use-context"
+alias klsp="kubectl get pods"
+alias klss="kubectl get services"
+alias tdpf="kubectl port-forward service/tenant-db-postgres-cluster-rw 5431:5432 -n dev-shared-2"
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

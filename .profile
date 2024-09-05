@@ -1,3 +1,8 @@
+# Not ran at each zsh termal session, on macOS.
+# Ran at each bash terminal session, on macOS.
+
+echo "Running .profile"
+
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -r "$file" ] && source "$file";
 done
@@ -26,3 +31,4 @@ fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+. "$HOME/.cargo/env"

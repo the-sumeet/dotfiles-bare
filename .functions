@@ -102,3 +102,11 @@ function infraprodbrown() {
 	cd config
 	ssh -v -N -F prod.cfg prod-brown
 }
+
+function infraprodvib(){
+	export AWS_PROFILE=prod
+	bin/whitelist prod-vibgyor bastion
+	bin/whitelist prod-vibgyor platform
+	cd config
+	ssh -v -N -F prod.cfg prod-vibgyor
+}

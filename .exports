@@ -24,4 +24,11 @@ export MANPAGER='less -X';
 
 ###
 
-SE_INFRA_TOOLS_PATH="/Users/sumeetmathpati/Projects/infra-tools"
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Languages
+export GO111MODULE="auto"
+
+# RabbitMQ
+export PATH=$PATH:/usr/local/sbin
+

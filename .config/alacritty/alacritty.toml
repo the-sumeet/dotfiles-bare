@@ -1,0 +1,13 @@
+[window]
+
+dynamic_title=true
+opacity = 0.85
+padding.x = 0
+padding.y = 0
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
+
+[font]
+size = 16.0
+
+[cursor]

@@ -23,7 +23,8 @@ setopt PROMPT_SUBST
 
 PROMPT='
 %F{010}%n %F{white}at %F{012}%m %F{white}in %F{130}${PWD/#$HOME/~} %F{white}${vcs_info_msg_0_} 
-%# ' RPROMPT=' %(?.%F{green}√.%F{red}?%?)%f'
+%# ' 
+RPROMPT=' %(?.%F{green}√.%F{red}?%?)%f'
 zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 
@@ -53,12 +54,6 @@ for file in ~/.{path,exports,aliases,functions,extra}; do
 done
 unset file;
 
-# Go 
-export GO111MODULE="auto"
 
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+
