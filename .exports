@@ -35,3 +35,6 @@ export GO111MODULE="auto"
 
 # RabbitMQ
 export PATH=$PATH:/usr/local/sbin
+
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
