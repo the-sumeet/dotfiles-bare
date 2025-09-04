@@ -25,3 +25,5 @@ export PATH='/Users/sumeetmathpati/.duckdb/cli/latest':$PATH
 
 export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib -L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include -I/opt/homebrew/opt/libpq/include"
+
+export XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/sumeet/.local/share/flatpak/exports/share

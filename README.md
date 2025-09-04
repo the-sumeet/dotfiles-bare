@@ -21,11 +21,24 @@ dotfiles push origin master
 
 ## Installing on other systems
 
+### BASH
+
+```bash
+echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.bashrc
+source ~/.bashrc
+echo ".dotfiles.git" >> .gitignore
+git clone --bare git@github.com:the-sumeet/dotfiles-bare.git $HOME/.dotfiles.git
+dotfiles checkout
+dotfiles config --local status.showUntrackedFiles no
+```
+
+### ZSH
+
 ```bash
 echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.zshrc
 source ~/.zshrc
 echo ".dotfiles.git" >> .gitignore
-git clone --bare https://github.com/the-sumeet/dotfiles-bare.git $HOME/.dotfiles.git
+git clone --bare git@github.com:the-sumeet/dotfiles-bare.git $HOME/.dotfiles.git
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
 ```
