@@ -22,7 +22,7 @@ alias kctx="kubectl config use-context"
 alias klsp="kubectl get pods"
 alias klss="kubectl get services"
 alias tdpf="kubectl port-forward service/tenant-db-postgres-cluster-rw 5431:5432 -n dev-shared-2"
-
+#alias startn8n="docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
