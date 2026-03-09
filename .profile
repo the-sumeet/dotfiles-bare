@@ -1,7 +1,6 @@
 # Not ran at each zsh termal session, on macOS.
 # Ran at each bash terminal session, on macOS.
 
-echo "Running .profile"
 
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -r "$file" ] && source "$file";
