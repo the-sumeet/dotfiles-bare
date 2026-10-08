@@ -4,30 +4,35 @@ export PATH="$HOME/.local/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-# Ruby
+# Ruby (gem user install)
 export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
 # Flutter
 export PATH="$HOME/flutter/bin:$PATH"
-export PATH=$PATH:/Users/sumeet/flutter/bin
 
+# Homebrew
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # libpq
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
- 
-export PATH='/Users/sumeetmathpati/.duckdb/cli/latest':$PATH
 
+# duckdb
+export PATH="$HOME/.duckdb/cli/latest:$PATH"
 
 export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib -L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include -I/opt/homebrew/opt/libpq/include"
 
+# Linux flatpak
 export XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/sumeet/.local/share/flatpak/exports/share
 
 export PATH="$HOME/.antigravity-ide/antigravity-ide/bin:$PATH"
 
 export PATH="$HOME/.opencode/bin:$PATH"
+
+# RabbitMQ
+export PATH=$PATH:/usr/local/sbin
+
+# Ruby (Homebrew)
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
